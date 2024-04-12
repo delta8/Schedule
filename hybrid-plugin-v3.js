@@ -652,7 +652,7 @@
   
   
         const getRibbonData = async (hostId, token) => {
-          const ribbonRes = fetch(`https://api.momence.com/api/v1/Events?hostId=7384&token=b8d4770650`)
+          const ribbonRes = fetch(`https://api.momence.com/api/v1/Events?hostId=${hostId}&token=${token}`)
             .then(response => response.json())
             .then(data => { return data })
             .catch((err) => console.log(err));
